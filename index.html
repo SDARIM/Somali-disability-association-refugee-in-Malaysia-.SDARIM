@@ -3,94 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Somali Disability Association Refugee in Malaysia (SDARIM) supports refugees with disabilities and their families in Malaysia.">
+  <meta name="description" content="SDARIM advocates for refugees with disabilities and supports their families in Malaysia.">
   <title>SDARIM | Somali Disability Association Refugee in Malaysia</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--blue:#2457a6;--blue-dark:#173b76;--sky:#eaf4ff;--teal:#168b87;--ink:#17243b;--muted:#5c687b;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+    a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid #e4eaf2}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:82px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:205px}.brand-mark{width:92px;height:60px;object-fit:contain;display:block}.brand strong{display:block;font-size:22px;color:var(--blue);line-height:1.15}.brand small{display:block;font-size:11px;line-height:1.3;color:var(--muted);max-width:180px}
+    nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}nav a{text-decoration:none;font-size:14px;font-weight:700}nav a:hover{color:var(--blue)}.support-link,.btn{display:inline-block;border-radius:12px;padding:11px 17px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;border:0}.support-link:hover,.btn:hover{background:var(--blue-dark)}
+    .hero{background:linear-gradient(120deg,#f7fbff 0%,#e7f4ff 70%,#dff4f0 100%);padding:72px 0}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;color:var(--blue)}h1{font-size:clamp(38px,5.5vw,62px);line-height:1.07;letter-spacing:-1.8px;margin:14px 0 20px;color:var(--blue-dark)}h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 18px;color:var(--blue-dark)}h3{margin:0 0 9px}.tagline{font-weight:800;font-style:italic;font-size:18px}.muted{color:var(--muted)}.hero-photo{width:100%;height:370px;object-fit:cover;border-radius:26px;box-shadow:0 18px 45px #183b7620}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn.secondary{background:#fff;color:var(--blue);border:1px solid #cbd9ed}
+    section{padding:68px 0}.section-intro{max-width:760px;margin-bottom:28px}.about-grid,.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.soft{background:#f6f9fd}.story-card{background:var(--sky);padding:30px;border-radius:20px;border-left:5px solid var(--teal)}.pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.pill{background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px;border:1px solid #e2e9f2;border-radius:18px;background:#fff}.card-icon{font-size:28px;margin-bottom:10px}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery figure{margin:0;border-radius:16px;overflow:hidden;background:#f1f5f9;border:1px solid #e2e8f0}.gallery img{display:block;width:100%;height:225px;object-fit:cover}.gallery figcaption{padding:10px 12px;font-size:13px;font-weight:700}.callout{background:var(--blue-dark);color:#fff;border-radius:22px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px}.callout h2{color:#fff}.callout .btn{background:#fff;color:var(--blue-dark);white-space:nowrap}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-box{background:#f6f9fd;border-radius:18px;padding:24px}.contact-box a{color:var(--blue);overflow-wrap:anywhere}.site-footer{background:#101e36;color:#e7eef8;padding:28px 0;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:800px){.header-inner{align-items:flex-start;padding:14px 0;flex-direction:column}nav{gap:12px}.hero{padding:48px 0}.hero-grid,.about-grid,.story-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{height:280px}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.callout{align-items:flex-start;flex-direction:column}}
+    @media(max-width:430px){.gallery{grid-template-columns:1fr}.gallery img{height:240px}nav a{font-size:13px}.brand-mark{width:42px;height:42px}}
+  </style>
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#home" aria-label="SDARIM home">
-    <span class="brand-mark" aria-hidden="true">♿</span>
-    <span><strong>SDARIM</strong><small>Somali Disability Association<br>Refugee in Malaysia</small></span>
-  </a>
-  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-  <nav class="nav">
-    <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a>
-    <a href="#activities">Our Work</a><a href="#support">Support Us</a><a href="#contact">Contact</a>
-  </nav>
-  <a class="donate-button" href="#support">♥ Support SDARIM</a>
+  <div class="wrap header-inner">
+    <a class="brand" href="#home" aria-label="SDARIM home"><img class="brand-mark" src="sdarim-logo.jpg" alt="Official SDARIM logo"><span><strong>SDARIM</strong><small>Somali Disability Association Refugee in Malaysia</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="support-link" href="#support">Support Us</a>
+    </nav>
+  </div>
 </header>
-
 <main>
-<section class="hero" id="home">
-  <div class="hero-copy">
-    <p class="eyebrow">Dignity • Inclusion • Community</p>
-    <h1>Supporting Refugees with Disabilities in Malaysia</h1>
-    <p class="slogan">“Naafonimadu ma aha jirka, waa dabeecad xun.”</p>
-    <p class="translation">Disability is not the body; it is a bad attitude.</p>
-    <p class="intro">We work to help refugees with disabilities, children with autism, and their families access support, learning opportunities, care, and community inclusion.</p>
-    <div class="hero-actions"><a class="button primary" href="#services">Explore our services</a><a class="button secondary" href="#contact">Contact SDARIM</a></div>
-  </div>
-  <div class="hero-art" aria-label="Illustration of inclusion and accessibility">
-    <div class="sun"></div><div class="circle circle-one"></div><div class="circle circle-two"></div>
-    <div class="art-card"><span class="art-icon">♿</span><span class="art-title">Everyone belongs</span><span class="art-sub">Access • Care • Opportunity</span></div>
-    <div class="art-person person-one">●<i></i></div><div class="art-person person-two">●<i></i></div>
-    <div class="art-ground"></div>
-  </div>
-</section>
-
-<section class="contact-strip">
-  <a href="tel:+601111833628"><span>☎</span> +60 11 1183 3628</a>
-  <a href="mailto:somalidisablerefugee@gmail.com"><span>✉</span> somalidisablerefugee@gmail.com</a>
-  <p><span>⌖</span> SH-8, Jalan Sampadi, Taman Setapak,<br>53000 Kuala Lumpur, Malaysia</p>
-</section>
-
-<section class="section" id="about">
-  <div class="section-heading"><p class="eyebrow">Who we are</p><h2>About SDARIM</h2></div>
-  <div class="about-grid">
-    <div><p>Somali Disability Association Refugee in Malaysia (SDARIM) is a community-based, non-profit initiative supporting refugee persons with disabilities, including children and adults, and their families.</p>
-    <p>Founded in July 2020, SDARIM works to promote dignity, inclusion, protection, education, and access to essential support for people who may face barriers because of disability and displacement.</p>
-    <p class="note">Our services and activities depend on available resources and partnerships. Please contact us to discuss current support and visiting arrangements.</p></div>
-    <div class="values"><div><span>01</span><h3>Dignity</h3><p>Respecting each person and their choices.</p></div><div><span>02</span><h3>Inclusion</h3><p>Making learning and community life more accessible.</p></div><div><span>03</span><h3>Care</h3><p>Connecting families with information and support.</p></div></div>
-  </div>
-</section>
-
-<section class="section soft" id="services">
-  <div class="section-heading"><p class="eyebrow">How we help</p><h2>Our Services</h2><p>Support focused on the needs of refugees with disabilities and their caregivers.</p></div>
-  <div class="cards">
-    <article class="service-card blue"><div class="service-icon">📘</div><h3>Learning & Autism Support</h3><p>Learning activities and family guidance for children, including children with autism and developmental support needs.</p></article>
-    <article class="service-card green"><div class="service-icon">♿</div><h3>Disability & Mobility Support</h3><p>Helping families identify mobility and assistive-device needs and seek appropriate referrals or donations.</p></article>
-    <article class="service-card red"><div class="service-icon">♡</div><h3>Health & Wellbeing</h3><p>Sharing information and helping connect people with healthcare, therapy, and other relevant services.</p></article>
-    <article class="service-card orange"><div class="service-icon">♧</div><h3>Family & Caregiver Support</h3><p>Community activities, awareness, and support for parents and caregivers.</p></article>
-    <article class="service-card purple"><div class="service-icon">✦</div><h3>Skills & Participation</h3><p>Activities that encourage skills, confidence, social connection, and participation.</p></article>
-    <article class="service-card teal"><div class="service-icon">⚖</div><h3>Protection & Referrals</h3><p>Guidance on seeking help and referrals for protection and other urgent concerns where possible.</p></article>
-  </div>
-</section>
-
-<section class="section" id="activities">
-  <div class="section-heading"><p class="eyebrow">Together we can do more</p><h2>Our Work & Activities</h2><p>SDARIM welcomes responsible collaboration with volunteers, service providers, and organizations.</p></div>
-  <div class="activity-grid">
-    <div class="activity"><div class="activity-symbol">✎</div><h3>Education and learning</h3><p>Supporting inclusive learning opportunities for children and adults.</p></div>
-    <div class="activity"><div class="activity-symbol">♡</div><h3>Family programmes</h3><p>Building understanding, confidence, and connection among caregivers.</p></div>
-    <div class="activity"><div class="activity-symbol">＋</div><h3>Community partnerships</h3><p>Working with partners to improve access to services and practical support.</p></div>
-  </div>
-</section>
-
-<section class="support-banner" id="support">
-  <div><p class="eyebrow">Stand with our community</p><h2>Help us build a more inclusive future.</h2><p>Donations, in-kind support, professional services, and volunteer time can help us reach refugee persons with disabilities and their families.</p></div>
-  <a class="button light" href="mailto:somalidisablerefugee@gmail.com?subject=Supporting%20SDARIM">Discuss how to help</a>
-</section>
-
-<section class="section contact-section" id="contact">
-  <div class="section-heading"><p class="eyebrow">Get in touch</p><h2>Contact SDARIM</h2><p>Contact us to ask about our activities, referrals, volunteering, or possible partnerships.</p></div>
-  <div class="contact-cards">
-    <a href="tel:+601111833628"><span>☎</span><strong>Phone</strong><small>+60 11 1183 3628</small></a>
-    <a href="mailto:somalidisablerefugee@gmail.com"><span>✉</span><strong>Email</strong><small>somalidisablerefugee@gmail.com</small></a>
-    <div><span>⌖</span><strong>Centre address</strong><small>SH-8, Jalan Sampadi, Taman Setapak, 53000 Kuala Lumpur, Malaysia</small></div>
-  </div>
-</section>
+  <section class="hero" id="home"><div class="wrap hero-grid">
+    <div><div class="eyebrow">Dignity · Inclusion · Community</div><h1>Supporting Refugees with Disabilities in Malaysia</h1>
+      <p class="tagline">“Naafonimadu ma aha jirka, waa dabeecad xun.”</p><p class="muted">Disability is not the body; it is a bad attitude.</p>
+      <p>SDARIM works to help refugees with disabilities, children with autism, and their families access support, learning opportunities, care, and community inclusion.</p>
+      <div class="hero-actions"><a class="btn" href="#services">Explore our services</a><a class="btn secondary" href="#contact">Contact SDARIM</a></div>
+    </div>
+    <img class="hero-photo" src="sdarim-community-1.jpg" alt="SDARIM community activity">
+  </div></section>
+  <section id="about"><div class="wrap about-grid">
+    <div><div class="eyebrow">Who we are</div><h2>About SDARIM</h2><p>Somali Disability Association Refugee in Malaysia (SDARIM) is a community-led, non-profit initiative focused specifically on refugees with disabilities and their families.</p><p>We work to raise awareness, connect families with support, promote access to education and care, and make sure refugees with disabilities are not overlooked.</p></div>
+    <div class="story-card"><h3>Our commitment</h3><p>We believe every person deserves dignity, respect, access, and the opportunity to participate in community life.</p><div class="pill-row"><span class="pill">Access</span><span class="pill">Care</span><span class="pill">Opportunity</span><span class="pill">Inclusion</span></div></div>
+  </div></section>
+  <section class="soft" id="services"><div class="wrap"><div class="section-intro"><div class="eyebrow">How we help</div><h2>Our Services</h2><p class="muted">Our activities respond to the needs of refugees with disabilities and their families.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">📘</div><h3>Learning opportunities</h3><p>English learning, early learning activities, and support for children and adults.</p></article>
+      <article class="card"><div class="card-icon">🧩</div><h3>Autism and family support</h3><p>Awareness, family guidance, and activities for children with autism and their caregivers.</p></article>
+      <article class="card"><div class="card-icon">🤝</div><h3>Community and referrals</h3><p>Connecting families with information, protection support, and relevant services.</p></article>
+    </div>
+  </div></section>
+  <section id="story"><div class="wrap story-grid">
+    <div><div class="eyebrow">Our Story & Founder</div><h2>Built from lived experience</h2><p>SDARIM was founded in July 2020 by <strong>Abdirahman Mohamud Barkhadle</strong>, a Somali refugee with a disability who saw that refugees with disabilities were often overlooked and faced barriers to support and inclusion.</p><p>He established SDARIM to advocate for refugees with disabilities, raise awareness of their needs, and help families seek access to learning, care, protection, and community support.</p><p>SDARIM’s work is rooted in the belief that disability should never mean exclusion.</p></div>
+    <figure style="margin:0"><img class="hero-photo" style="height:340px" src="sdarim-centre-1.jpg" alt="SDARIM community and disability inclusion activity"></figure>
+  </div></section>
+  <section class="soft" id="gallery"><div class="wrap"><div class="section-intro"><div class="eyebrow">Our work in pictures</div><h2>SDARIM Community Gallery</h2><p class="muted">A glimpse of our community and activities.</p></div>
+    <div class="gallery">
+      <figure><img src="sdarim-community-2.jpg" alt="SDARIM community photo"><figcaption>Community and inclusion</figcaption></figure>
+      <figure><img src="sdarim-centre-1.jpg" alt="SDARIM community activity"><figcaption>Community activities</figcaption></figure>
+      <figure><img src="sdarim-community-3.jpg" alt="SDARIM activity photo"><figcaption>Our work together</figcaption></figure>
+      <figure><img src="sdarim-community-1.jpg" alt="SDARIM group activity"><figcaption>Building connections</figcaption></figure>
+    </div>
+    <p class="muted" style="font-size:13px;margin-top:18px">Please ensure you have permission to publish identifiable photos, especially photos of children.</p>
+  </div></section>
+  <section id="support"><div class="wrap"><div class="callout"><div><div class="eyebrow" style="color:#b9e8e3">Stand with the community</div><h2>Support SDARIM’s work</h2><p>Partnerships and practical support can help refugees with disabilities and their families access opportunities and care.</p></div><a class="btn" href="#contact">Get in touch</a></div></div></section>
+  <section id="contact"><div class="wrap"><div class="section-intro"><div class="eyebrow">Contact us</div><h2>Connect with SDARIM</h2><p class="muted">For collaboration, volunteering, referrals, or support enquiries, contact our team.</p></div>
+    <div class="contact-grid"><div class="contact-box"><h3>SDARIM Centre</h3><p>SH-8, Jalan Sampadi,<br>Taman Setapak, 53000 Kuala Lumpur, Malaysia</p><p><strong>Phone:</strong> <a href="tel:+601111833628">+60 11 1183 3628</a></p><p><strong>Email:</strong> <a href="mailto:somalidisablerefugee@gmail.com">somalidisablerefugee@gmail.com</a></p></div><div class="contact-box"><h3>Our purpose</h3><p>Advocacy and community support for refugees with disabilities in Malaysia.</p><p>We welcome respectful collaboration that supports dignity, access, and inclusion.</p></div></div>
+  </div></section>
 </main>
-<footer><a class="footer-brand" href="#home">SDARIM</a><p>Somali Disability Association Refugee in Malaysia</p><p>Working for dignity, inclusion, and support for refugees with disabilities.</p><small>© <span id="year"></span> SDARIM. Please contact us to confirm current services and opening hours.</small></footer>
-<script src="assets/script.js"></script>
+<footer class="site-footer"><div class="wrap footer-inner"><span>© SDARIM · Somali Disability Association Refugee in Malaysia</span><span>Dignity · Inclusion · Community</span></div></footer>
 </body>
 </html>
