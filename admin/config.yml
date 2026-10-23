@@ -1,0 +1,20 @@
+
+backend:
+  name: github
+  repo: SDARIM/Somali-disability-association-refugee-in-Malaysia-.SDARIM
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "media"
+    label: "Website Images"
+    folder: "uploads"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text", required: false }
